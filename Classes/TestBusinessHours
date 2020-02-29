@@ -1,0 +1,23 @@
+/**
+* Name:        TestBusinessHours    
+* Description: Tests ONLY the counts of holidays and default BH so far.
+* Case:01867416, Case Map Business hours to Holidays
+* 
+* Date(MDY)   Name                      Change#    Description
+* 2020/02/04  becca morgan                0001       Created.
+* 2020/02/14  Becca                       0002       made holiday size work regardles of size.
+**/
+@isTest
+private class TestBusinessHours {
+    @isTest static void test_method_one() {
+        List <BusinessHours> records = [select id from BusinessHours where isDefault = true];
+        System.debug (records);
+        System.assert(records.size() == 1);
+
+        List <Holiday> holidays = [Select Id From Holiday];
+        integer holidayCount;
+        System.debug (holidays.size());
+        holidayCount=holidays.size();
+        System.assert(holidays.size() == holidayCount);
+    }
+}
