@@ -11,5 +11,7 @@ DO NOT LOAD A SUBSET OF YOUR BUSINESS HOURS!!!!
 Loading this file overwrites the current holidays and business hours.  It does not upsert.  
 
 To pull your org Holidays, Open VS Code and Retrieve the package (or you can use workbench.)
-Then add the holidays at the end and get the business hours added as seen in the very long code here!
+Then add the holidays at the end and get the business hours added as seen in the code here!
+
+More detailed directions in attached file and here:  https://sites.google.com/monkeyfufu.net/monkeyingaroundthestorm/home/set-holidays-on-business-hours-in-bulk 
 
